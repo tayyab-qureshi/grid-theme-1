@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+
+}
+
+.aside {
+    height: 100vh;
+    width: 360px;
+    grid-column: 1/2;
+    background-color: black;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 160px 40px 70px 460px 50px;
+}
+
+.aside h1 {
+    color: white;
+    font-size: 30px;
+    place-self: center;
+}
+
+.icon {
+    place-self: center;
+}
+
+.icon a {
+    padding: 10px 10px;
+    background-color: rgb(56, 54, 54);
+    border-radius: 48px;
+}
+
+.icn {
+    font-size: 20px;
+    color: white;
+}
+
+.image {
+    place-self: center;
+    /* margin-top: 40px; */
+}
+
+.image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 56px;
+    border: 5px solid gray;
+}
+
+.aside ul {
+    margin-left: 50px;
+    list-style: none;
+    font-size: 18px;
+    color: gray;
+}
+
+.aside ul li {
+    padding-top: 40px;
+}
+
+.aside ul li span {
+    padding-left: 10px;
+}
+
+.home {
+    color: white;
+}
+
+
+.icn-home {
+    color: blue;
+}
+
+.aside-text {
+    color: white;
+    width: 200px;
+    place-self: center;
+}
+
+.aside-text p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.aside-text p span {
+    color: blue;
+}
+
+.container {
+    /* background-color: gray; */
+    /* color: blue; */
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh;
+}
+
+.banner {
+    background-image: linear-gradient(to right, rgba(73, 71, 71, 0.678), rgba(46, 46, 46, 0.205)), url(../img/hero-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 310px 50px;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 80px;
+    margin-top: 240px;
+    margin-left: 200px;
+}
+
+.banner h3 {
+    color: white;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+.text h1{
+    font-size: 30px;
+    padding: 50px 20px 20px 20px;
+}
+.text p{
+    padding: 20px;
+    font-size: 20px;
+}
+.about-child{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+}
+.about-image{
+    width: 360px;
+    height: 360px;
+    padding-left: 20px;
+}
+.about-text h1{
+    font-size: 30px;
+    color: rgb(48, 39, 109);
+}
+.about-text p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.first-ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.first-ul li{
+    padding: 20px 0;
+}
